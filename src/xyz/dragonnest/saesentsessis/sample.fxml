@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #1f1f1f;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xyz.dragonnest.saesentsessis.ControllerJFX">
+   <children>
+      <ImageView fx:id="LogoImg" fitHeight="350.0" fitWidth="350.0" layoutX="471.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@assets/Planets_logo.png"/>
+      </ImageView>
+      <Text fx:id="LogoText" layoutX="6.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Celestial Simulation" textAlignment="CENTER" wrappingWidth="1280.0">
+         <font>
+            <Font name="Papyrus" size="96.0" />
+         </font>
+         <fill>
+            <LinearGradient startX="1.0">
+               <stops>
+                  <Stop color="#977676" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Canvas fx:id="canvas" height="720.0" width="1280.0" />
+      <Button fx:id="FScreenStartButton" alignment="CENTER" layoutX="521.0" layoutY="508.0" mnemonicParsing="false" onAction="#pause" prefHeight="174.0" prefWidth="250.0" style="-fx-background-color: #00000000;" text="Start" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Papyrus" size="64.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
